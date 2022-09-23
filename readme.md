@@ -30,3 +30,8 @@ This feature is for large benefits which require multiple users entering at the 
 The database files with "ODBC_MYSQL" as a suffix are predesigned to connect to either MariaDB or MySQL as a backend via ODBC (MySQL Unicode ODBC driver) to a named data source (Set up in "ODBC Data Sources (64-bit)" via Windows start menu search) which is named "tam"
 
 A static .sql script will be included in this commit which will setup a database with the proper tables. You or the person setting it up should open the file and rename the three instances of "tam" to the desired production db name, along with the two instances of the username 'tam' near the end, and 'strongpassword' to the desired password, next to the first instance of the 'tam' user.
+
+Added the Python script to allow for easier customization in database names and usernames and passwords.
+
+# Updates
+Read updates.md to see exact updates on this project.
