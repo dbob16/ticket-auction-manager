@@ -4,7 +4,7 @@ import os
 def main(error=""):
     clear()
     print(error)
-    print("Welcome to the backend installer for Ticket Auction Manager.\nThis will ask a few questions. As this is designed to create the necessary structure BEFORE an event, naming anything the same as previous db's and users will delete them.\nPress Ctrl+C to exit at any time.")
+    print("Welcome to the backend installer for Ticket Auction Manager.\nThis will ask a few questions. As this is designed to create the necessary structure BEFORE an event, naming anything the same as previous db's and users will delete them.\nClose window to exit at any time.")
     orig_hostname = input("Enter the hostname of the server here (default = localhost): ")
     if orig_hostname == "":
         orig_hostname = "localhost"
