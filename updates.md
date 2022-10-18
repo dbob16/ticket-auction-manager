@@ -1,4 +1,14 @@
 # Updates (from newest to oldest)
+
+## October 18th, 2022
+Fixed reports:
+* link to sequential reports on main menu
+* Specialty sequential no longer links to regular ticket items
+
+Fixed defaults for standalone version:
+* Regular and Specialty basket tables now have a default of 0 on WinningTicket column allowing them to show up on the drawing form
+* Regular and Specialty ticket tables now default 0 on the Text column so the check box is no longer boxed in by default
+
 ## September 23rd, 2022
 Installer python script quickly hashed out and added. More to come.
 
