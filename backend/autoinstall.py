@@ -64,8 +64,13 @@ def main():
 
     cn.execute(f"CREATE USER '{new_user}'@'%' IDENTIFIED BY '{new_passwd}'")
     cn.execute(f"GRANT ALL PRIVILEGES ON `{new_db}`.* TO '{new_user}'@'%' WITH GRANT OPTION")
+    print("User created successfully.")
     cnx.commit()
     cn.execute("FLUSH PRIVILEGES")
+    print("All operations completed successfully.")
+    input("Press enter to quit: ")
+    cnx.close()
+    quit()
 
 
 
@@ -80,6 +85,7 @@ def connect():
         portnum = int(portnum)
     except:
         print("Try entering a number or nothing (just press enter) for port next time.")
+        quit()
     username = input("Please enter username: [default = root] ")
     if username == "":
         username = "root"
@@ -100,6 +106,7 @@ def connect():
         print("Permissions good, continuing.")
     else:
         print("Permissions not good, retry.")
+        quit()
 
     return {"host": hostnameip, "port": portnum, "user": username, "password": password}
 
