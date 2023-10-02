@@ -75,7 +75,7 @@ def main():
 
 
 def connect():
-    hostnameip = input("Please enter hostname/ip: [default = localhost]")
+    hostnameip = input("Please enter hostname/ip: [default = localhost] ")
     if hostnameip == "":
         hostnameip = "localhost"
     portnum = input("Please enter port number: [default = 3306] ")
